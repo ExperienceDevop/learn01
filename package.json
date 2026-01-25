@@ -1,0 +1,28 @@
+{
+  "name": "contactmanager",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/ExperienceDevop/learn01#readme",
+  "bugs": {
+    "url": "https://github.com/ExperienceDevop/learn01/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ExperienceDevop/learn01.git"
+  },
+  "license": "MIT",
+  "author": "Moon",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon",
+    "start": "node ."
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}

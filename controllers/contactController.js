@@ -18,6 +18,7 @@ const getContact = (req, res) => {
 const createContact = (req, res) => {
   console.log (req.body)
   const { name, email, phone} = req.body
+  
   if (!name || !email || !phone) {
     let stat = []
     if (!name) stat.push ("name not entered")

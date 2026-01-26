@@ -18,14 +18,10 @@ const getContact = (req, res) => {
 const createContact = (req, res) => {
   console.log (req.body)
   const { name, email, phone} = req.body
-  
-  if (!name || !email || !phone) {
-    let stat = []
-    if (!name) stat.push ("name not entered")
-    if (!email) stat.push ("email not entered")
-    if (!phone) stat.push ("phone number not entered")
 
-    res.status (400).json ({message: `${stat}`})
+  if (!name || !email || !phone) {
+
+    res.status (400)
     throw new Error ("All fields are manditory")
   }
 

@@ -19,11 +19,11 @@ const createContact = (req, res) => {
   console.log (req.body)
   const { name, email, phone} = req.body
   if (!name || !email || !phone) {
-    res.status (400)
+    res.status (400).json ({message: "All fields are manditory"})
     throw new Error ("All fields are manditory")
   }
 
-  res.status (201).json ({message: "Create contacts..."})
+  res.status (201).json ({message: "Created contact..."})
 }
 
 //desc Update contact
